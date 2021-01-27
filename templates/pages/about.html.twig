@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %} 
+
+{% block title 'About Us | '~ parent() %}
+
+{% block body %}
+
+<img src="/images/aissatou.png" alt="about_me" width="300px" height="300px" class="my-12 rounded-full shadow-md">
+ 
+<h1 class="text-gray-700">Buitl <span class="text-pink-500">&hearts;</span> with by AISSATOU</h1>
+
+<p  class="mt-5 text-indigo-500 hover:text-indigo-600 underline"><a href="{{path('app_home')}}">Revenir à la page d'accueil</a></p>
+
+{% endblock %}

@@ -1,16 +1,14 @@
 {% extends "base.html.twig" %} 
 
+
 {% block body %}
+<img src= {{asset('/images/sn_flag.jpeg')}} alt="sn_flag">
 
-<h1>Hello from Dakar!</h1>
+<h1 class="mt-5 text-3xl sm:text-5xl font-semibold text-indigo-600" >Hello from Dakar!</h1>
+<p class="text-lg text-gray-800">
+    It's currently {{'now'|date('H:i A')}}.
+</p>
 
-<p>It's currently {{'now'|date('H:i A')}}.</p>
 
-<footer>
-    <p>
-        &copy; Copyright {{'now'|date('Y')}} 
-        &middot; <a href="#">About Us</a>
-    </p>
-</footer>
 
 {% endblock %}
